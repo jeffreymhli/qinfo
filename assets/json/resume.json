@@ -15,8 +15,7 @@
       "studyType": "Bachelor of Engineering Science",
       "startDate": "2023-09-01",
       "endDate": "2028-05-01",
-      "score": "3.9/4.0",
-      "courses": ["Quantum Information, Quantum Optics"]
+      "score": "3.9/4.0"
     }
   ],
   "awards": [
@@ -49,6 +48,19 @@
         "Tensorflow",
         "OpenCV"
       ]
+    },
+    {
+      "name": "Engineering",
+      "level": "Master",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "PCB Design",
+        "Power Tools",
+        "Metal Work",
+        "Circuit Design",
+        "Soldering",
+        "Optical Assembly"
+      ]
     }
   ],
   "languages": [
@@ -59,6 +71,11 @@
     },
     {
       "language": "Mandarin",
+      "fluency": "Fluent",
+      "icon": ""
+    },
+    {
+      "language": "Spanish",
       "fluency": "Fluent",
       "icon": ""
     }
