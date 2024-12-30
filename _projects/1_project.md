@@ -9,8 +9,9 @@ related_publications: true
 ---
 
 <style>
-/* --- CSS for Dropdown --- */
+/* --- CSS for Dropdown (Click-to-open version) --- */
 
+/* Course block container */
 .course-block {
   margin-bottom: 2rem;
   border: 1px solid #ddd;
@@ -18,13 +19,13 @@ related_publications: true
   border-radius: 4px;
 }
 
-/* Wrap the dropdown button */
+/* Wrap the dropdown button and content */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Style the dropdown button */
+/* Style the button that toggles the dropdown */
 .dropbtn {
   background-color: #008c9e;
   color: white;
@@ -40,7 +41,7 @@ related_publications: true
   background-color: #007480;
 }
 
-/* The dropdown content (hidden by default) */
+/* The dropdown content is hidden by default; toggled via JavaScript */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -65,28 +66,60 @@ related_publications: true
   background-color: #eee;
 }
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+/* Show the dropdown when toggled */
+.show {
   display: block;
 }
 </style>
 
 <!-- Main Content: Example Course 1 -->
-<h2>ESC194 – Calculus I</h2>
+<h2>AER210 – Fluid Mechanics</h2>
 <div class="course-block">
   <p>
-    A first-year calculus course covering typical content,
-    including some real analysis and differential equations.
+    A second-year Multi-variable Calculus course with Fluid mechanics on the second half.
   </p>
 
+  <!-- Dropdown container -->
   <div class="dropdown">
-    <button class="dropbtn">Course Materials</button>
-    <div class="dropdown-content">
-      <a href="assets/pdf/AER210.pdf" target="_blank">
+    <!-- Button that triggers the dropdown -->
+    <button onclick="toggleDropdown('myDropdown')" class="dropbtn">
+      Course Materials
+    </button>
+
+    <!-- Dropdown menu -->
+    <div id="myDropdown" class="dropdown-content">
+      <a href="assets/AER210.pdf" target="_blank">
         Lecture Notes
       </a>
     </div>
   </div>
 </div>
 
-<!-- Repeat the above "course-block" section for additional courses -->
+<!-- Repeat the above block for additional courses, 
+     giving each dropdown-content a unique ID, e.g. myDropdown2, myDropdown3, etc. -->
+
+<script>
+/**
+ * Toggle the dropdown menu for a given ID.
+ * @param {string} dropdownID - The ID of the dropdown-content div
+ */
+function toggleDropdown(dropdownID) {
+  document.getElementById(dropdownID).classList.toggle("show");
+}
+
+/**
+ * Close the dropdown if the user clicks outside of it.
+ */
+window.onclick = function(event) {
+  // If the click is NOT on a dropbtn, close all dropdowns
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
