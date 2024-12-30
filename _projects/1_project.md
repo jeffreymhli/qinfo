@@ -88,7 +88,7 @@ related_publications: true
 
     <!-- Dropdown menu -->
     <div id="myDropdown" class="dropdown-content">
-      <a href="AER210.pdf" target="_blank">
+      <a href="../AER210.pdf" target="_blank">
         Lecture Notes
       </a>
     </div>
