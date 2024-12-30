@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 1
-description: with background image
+title: University Notes
+description: This page includes all the university notes for specific courses. It may not be entirely complete or correct.
 img: assets/img/12.jpg
 importance: 1
 category: work
