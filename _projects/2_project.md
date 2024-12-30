@@ -2,10 +2,10 @@
 layout: page
 title: UofT Engsci Notes
 description: with background image
-img: assets/img/12.jpg
-importance: 1
+img: 
+importance: 2
 category: work
-related_publications: true
+related_publications: false
 ---
 
 Some introductory text here.
