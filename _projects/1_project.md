@@ -72,6 +72,16 @@ related_publications: true
 }
 </style>
 
+<a href="{{ site.baseurl }}/assets/pdf/Undergraduate_Physics.pdf" target="_blank">
+UnderGraduate Physics
+</a>
+
+<a href="{{ site.baseurl }}/assets/pdf/Undergraduate_Math.pdf" target="_blank">
+UnderGraduate Math
+</a>
+
+
+
 <!-- Main Content: Example Course 1 -->
 <h2>AER210 – Fluid Mechanics</h2>
 <div class="course-block">
@@ -106,7 +116,7 @@ related_publications: true
   <!-- Dropdown container -->
   <div class="dropdown">
     <!-- Button that triggers the dropdown -->
-    <button onclick="toggleDropdown('myDropdown')" class="dropbtn">
+    <button onclick="toggleDropdown('myDropdown2')" class="dropbtn">
       Course Materials
     </button>
 
