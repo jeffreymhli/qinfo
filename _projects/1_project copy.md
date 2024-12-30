@@ -13,7 +13,7 @@ Some introductory text here.
 <div class="dropdown">
     <button class="dropbtn">Menu</button>
     <div class="dropdown-content">
-        <a href="assets\pdf\AER210.pdf" target="_blank">View PDF</a>
+        <a href="AER210.pdf" target="_blank">View PDF</a>
     </div>
 </div>
 
