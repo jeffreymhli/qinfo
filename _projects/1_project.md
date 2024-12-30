@@ -73,10 +73,11 @@ related_publications: true
 </style>
 
 <!-- Main Content: Example Course 1 -->
-<h2>AER210 – Fluid Mechanics</h2>
+<h2>ESC194 – Calculus I</h2>
 <div class="course-block">
   <p>
-    A second-year Multi-variable Calculus course with Fluid mechanics on the second half.
+    A first-year calculus course covering typical content,
+    including some real analysis and differential equations.
   </p>
 
   <!-- Dropdown container -->
@@ -88,8 +89,20 @@ related_publications: true
 
     <!-- Dropdown menu -->
     <div id="myDropdown" class="dropdown-content">
-      <a href="assets/AER210.pdf" target="_blank">
+      <a href="assets/pdfs/LectureNotes.pdf" target="_blank">
         Lecture Notes
+      </a>
+      <a href="assets/pdfs/MidtermIReview.pdf" target="_blank">
+        Midterm I Review
+      </a>
+      <a href="assets/pdfs/MidtermIIReview.pdf" target="_blank">
+        Midterm II Review
+      </a>
+      <a href="assets/pdfs/ExamReview.pdf" target="_blank">
+        Exam Review
+      </a>
+      <a href="assets/pdfs/DifferentialEquationFlowchart.pdf" target="_blank">
+        Differential Equation Flowchart
       </a>
     </div>
   </div>
@@ -123,3 +136,5 @@ window.onclick = function(event) {
   }
 }
 </script>
+
+{% endraw %}
