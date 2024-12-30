@@ -2,7 +2,7 @@
 layout: page
 title: University Notes
 description: This page includes all the university notes for specific courses. It may not be entirely complete or correct.
-img: assets/img/12.jpg
+img: assets/img/uoft.png
 importance: 1
 category: work
 related_publications: true
@@ -88,7 +88,7 @@ related_publications: true
 
     <!-- Dropdown menu -->
     <div id="myDropdown" class="dropdown-content">
-      <a href="_projects\assets\AER210.pdf" target="_blank">
+      <a href="AER210.pdf" target="_blank">
         Lecture Notes
       </a>
     </div>
