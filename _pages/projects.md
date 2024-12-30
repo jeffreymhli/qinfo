@@ -1,10 +1,12 @@
 ---
 layout: page
-permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+permalink: /teaching/
+description: A growing collection of the course notes throughout my academic journey.
 nav: true
-nav_order: 6
+nav_order: 3
+display_categories: [work, fun]
+horizontal: false
 ---
 
 <!-- pages/projects.md -->
