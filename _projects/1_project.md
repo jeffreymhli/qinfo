@@ -121,7 +121,7 @@ UnderGraduate Math
     </button>
 
     <!-- Dropdown menu -->
-    <div id="myDropdown" class="dropdown-content">
+    <div id="myDropdown2" class="dropdown-content">
       <a href="{{ site.baseurl }}/assets/pdf/CHE260.pdf" target="_blank">
         Lecture Notes
       </a>
@@ -145,13 +145,15 @@ UnderGraduate Math
     </button>
 
     <!-- Dropdown menu -->
-    <div id="myDropdown" class="dropdown-content">
-      <a href="{{ site.baseurl }}/assets/pdf/CHE260.pdf" target="_blank">
+    <div id="myDropdown3" class="dropdown-content">
+      <a href="{{ site.baseurl }}/assets/pdf/PHY365.pdf" target="_blank">
         Lecture Notes
       </a>
     </div>
   </div>
 </div>
+
+
 <!-- Repeat the above block for additional courses, 
      giving each dropdown-content a unique ID, e.g. myDropdown2, myDropdown3, etc. -->
 
