@@ -92,12 +92,12 @@ UnderGraduate Math
   <!-- Dropdown container -->
   <div class="dropdown">
     <!-- Button that triggers the dropdown -->
-    <button onclick="toggleDropdown('myDropdown')" class="dropbtn">
+    <button onclick="toggleDropdown('myDropdown1')" class="dropbtn">
       Course Materials
     </button>
 
     <!-- Dropdown menu -->
-    <div id="myDropdown" class="dropdown-content">
+    <div id="myDropdown1" class="dropdown-content">
       <a href="{{ site.baseurl }}/assets/pdf/AER210.pdf" target="_blank">
         Lecture Notes
       </a>
@@ -129,6 +129,29 @@ UnderGraduate Math
   </div>
 </div>
 
+
+<!-- Main Content: Example Course 1 -->
+<h2>PHY365 - Quantum Information</h2>
+<div class="course-block">
+  <p>
+    A Third Year introductory Course on Quantum Information
+  </p>
+
+  <!-- Dropdown container -->
+  <div class="dropdown">
+    <!-- Button that triggers the dropdown -->
+    <button onclick="toggleDropdown('myDropdown3')" class="dropbtn">
+      Course Materials
+    </button>
+
+    <!-- Dropdown menu -->
+    <div id="myDropdown" class="dropdown-content">
+      <a href="{{ site.baseurl }}/assets/pdf/CHE260.pdf" target="_blank">
+        Lecture Notes
+      </a>
+    </div>
+  </div>
+</div>
 <!-- Repeat the above block for additional courses, 
      giving each dropdown-content a unique ID, e.g. myDropdown2, myDropdown3, etc. -->
 
