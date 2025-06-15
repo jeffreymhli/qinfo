@@ -80,6 +80,17 @@ UnderGraduate Physics
 UnderGraduate Math
 </a>
 
+<a href="{{ site.baseurl }}/assets\pdf\E_M.pdf" target="_blank">
+ElectroMagnetism
+</a>
+<a href="{{ site.baseurl }}/assets\pdf\Quantum_Optics.pdf" target="_blank">
+Quantum Optics
+</a>
+<a href="{{ site.baseurl }}/assets\pdf\Quantum_Information.pdf" target="_blank">
+Quantum Information
+</a>
+
+
 
 
 <!-- Main Content: Example Course 1 -->
@@ -128,6 +139,7 @@ UnderGraduate Math
     </div>
   </div>
 </div>
+
 
 <!-- Repeat the above block for additional courses, 
      giving each dropdown-content a unique ID, e.g. myDropdown2, myDropdown3, etc. -->
