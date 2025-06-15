@@ -83,9 +83,11 @@ UnderGraduate Math
 <a href="{{ site.baseurl }}/assets\pdf\E_M.pdf" target="_blank">
 ElectroMagnetism
 </a>
+
 <a href="{{ site.baseurl }}/assets\pdf\Quantum_Optics.pdf" target="_blank">
 Quantum Optics
 </a>
+
 <a href="{{ site.baseurl }}/assets\pdf\Quantum_Information.pdf" target="_blank">
 Quantum Information
 </a>
@@ -141,33 +143,6 @@ Quantum Information
 </div>
 
 
-<<<<<<< HEAD
-=======
-<!-- Main Content: Example Course 1 -->
-<h2>PHY365 - Quantum Information</h2>
-<div class="course-block">
-  <p>
-    A Third Year introductory Course on Quantum Information
-  </p>
-
-  <!-- Dropdown container -->
-  <div class="dropdown">
-    <!-- Button that triggers the dropdown -->
-    <button onclick="toggleDropdown('myDropdown3')" class="dropbtn">
-      Course Materials
-    </button>
-
-    <!-- Dropdown menu -->
-    <div id="myDropdown3" class="dropdown-content">
-      <a href="{{ site.baseurl }}/assets/pdf/PHY365.pdf" target="_blank">
-        Lecture Notes
-      </a>
-    </div>
-  </div>
-</div>
-
-
->>>>>>> 989a3b57627fa1675f5179e2bcf2bfc3d8ebf9a5
 <!-- Repeat the above block for additional courses, 
      giving each dropdown-content a unique ID, e.g. myDropdown2, myDropdown3, etc. -->
 
