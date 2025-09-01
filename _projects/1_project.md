@@ -92,57 +92,6 @@ Quantum Optics
 Quantum Information
 </a>
 
-
-
-
-<!-- Main Content: Example Course 1 -->
-<h2>AER210 – Fluid Mechanics</h2>
-<div class="course-block">
-  <p>
-    A second-year Multi-variable Calculus course with Fluid mechanics on the second half.
-  </p>
-
-  <!-- Dropdown container -->
-  <div class="dropdown">
-    <!-- Button that triggers the dropdown -->
-    <button onclick="toggleDropdown('myDropdown1')" class="dropbtn">
-      Course Materials
-    </button>
-
-    <!-- Dropdown menu -->
-    <div id="myDropdown1" class="dropdown-content">
-      <a href="{{ site.baseurl }}/assets/pdf/AER210.pdf" target="_blank">
-        Lecture Notes
-      </a>
-    </div>
-  </div>
-</div>
-
-
-<!-- Main Content: Example Course 1 -->
-<h2>Che260 - Heat Transfer and Thermodynamics</h2>
-<div class="course-block">
-  <p>
-    A second-year Theomodynamics and Heat Transfer Course
-  </p>
-
-  <!-- Dropdown container -->
-  <div class="dropdown">
-    <!-- Button that triggers the dropdown -->
-    <button onclick="toggleDropdown('myDropdown2')" class="dropbtn">
-      Course Materials
-    </button>
-
-    <!-- Dropdown menu -->
-    <div id="myDropdown2" class="dropdown-content">
-      <a href="{{ site.baseurl }}/assets/pdf/CHE260.pdf" target="_blank">
-        Lecture Notes
-      </a>
-    </div>
-  </div>
-</div>
-
-
 <!-- Repeat the above block for additional courses, 
      giving each dropdown-content a unique ID, e.g. myDropdown2, myDropdown3, etc. -->
 
