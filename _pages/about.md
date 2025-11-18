@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.utoronto.ca/'>UofT</a> 2nd Year Engineering Physics
+subtitle: <a href='https://www.utoronto.ca/'>UofT</a> 3rd Year Engineering Physics
 
 profile:
   align: right
