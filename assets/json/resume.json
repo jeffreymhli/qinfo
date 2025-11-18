@@ -4,7 +4,7 @@
     "label": "2nd Year Engineering Physics, UofT",
     "image": "",
     "email": "jeffreyli2288@outlook.com",
-    "summary": "A 2nd year Engineering Physics student at the University of Toronto. I am passionate about quantum computing and quantum information. I am currently working on a project to develop a Machine Learning Model using D-wave Quantum Annealer."
+    "summary": "A 3rd year Engineering Physics student at the University of Toronto. I am passionate about quantum computing and quantum information."
   },
   "education": [
     {
@@ -23,6 +23,11 @@
       "title": "Engineering Research Opportunity Grant - $ 7000",
       "date": "2024-05-01",
       "awarder": "University of Toronto"
+    },
+    {
+      "title": "CQIQC Uncergraduate Research Fellowship - $10000",
+      "date": "2025-05-01",
+      "awarder": "University of Toronto" 
     }
   ],
   "certificates": [
