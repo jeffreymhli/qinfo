@@ -68,7 +68,7 @@ related_publications: true
   }
 </style>
 
-{% assign library_files = site.static_files | where_exp: "file", "file.path contains 'assets/pdf/library'" %}
+{% assign library_files = site.static_files | where_exp: "file", "file.path contains 'assets/pdf/notes'" %}
 
 {% assign categories = "" | split: "" %}
 {% for file in library_files %}
