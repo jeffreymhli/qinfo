@@ -1,7 +1,7 @@
 ---
 layout: page
 title: University Notes
-description: This page includes all the university notes for specific courses. It may not be entirely complete or correct.
+description: This page includes all the university notes for specific courses.
 img: assets/img/uoft.png
 importance: 1
 category: work
@@ -9,7 +9,7 @@ related_publications: true
 ---
 
 <style>
-  /* Term Headers (e.g. Year 1) */
+  /* --- YOUR ORIGINAL STYLES --- */
   .term-header {
     font-size: 1.5rem;
     font-weight: 600;
@@ -17,17 +17,15 @@ related_publications: true
     margin-top: 3rem;
     margin-bottom: 1.5rem;
     padding-left: 15px;
-    border-left: 4px solid #0056b3; /* The blue accent line */
+    border-left: 4px solid #0056b3;
   }
 
-  /* Course Container */
   .course-block {
     margin-bottom: 2rem;
     padding-bottom: 1rem;
-    border-bottom: 1px dashed #eee; /* Subtle separator */
+    border-bottom: 1px dashed #eee;
   }
 
-  /* Course Title Row */
   .course-title {
     font-size: 1.1rem;
     font-weight: bold;
@@ -35,11 +33,11 @@ related_publications: true
   }
 
   .course-code {
-    color: #0056b3; /* Academic Blue */
+    color: #0056b3;
     margin-right: 8px;
+    text-transform: uppercase;
   }
 
-  /* Course Description */
   .course-desc {
     font-size: 0.95rem;
     color: #666;
@@ -47,17 +45,15 @@ related_publications: true
     line-height: 1.5;
   }
 
-  /* Resource Links Container */
   .resource-list {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
   }
 
-  /* The Link "Buttons" */
   .resource-tag {
     background-color: #f4f4f9;
-    color: #0056b3 !important; /* Force color to match theme */
+    color: #0056b3 !important;
     padding: 4px 10px;
     border-radius: 4px;
     font-size: 0.85rem;
@@ -72,55 +68,61 @@ related_publications: true
   }
 </style>
 
-<div class="term-header">General Resources</div>
+{% assign library_files = site.static_files | where_exp: "file", "file.path contains 'assets/pdf/library'" %}
 
-<div class="course-block">
-  <div class="course-title">
-    <span class="course-code">PHY-GEN</span> Undergraduate Physics
-  </div>
-  <div class="course-desc">
-    General notes covering the undergraduate physics curriculum.
-  </div>
-  <div class="resource-list">
-    <a href="{{ site.baseurl }}/assets/pdf/Undergraduate_Physics.pdf" target="_blank" class="resource-tag">Full Notes</a>
-    </div>
-</div>
+{% assign categories = "" | split: "" %}
+{% for file in library_files %}
+    {% assign parts = file.path | split: '/' %}
+    {% if parts.size > 4 %}
+        {% assign cat = parts[4] %}
+        {% unless categories contains cat %}
+            {% assign categories = categories | push: cat %}
+        {% endunless %}
+    {% endif %}
+{% endfor %}
 
-<div class="course-block">
-  <div class="course-title">
-    <span class="course-code">MAT-GEN</span> Undergraduate Math
-  </div>
-  <div class="course-desc">
-    Comprehensive mathematics notes.
-  </div>
-  <div class="resource-list">
-    <a href="{{ site.baseurl }}/assets/pdf/Undergraduate_Math.pdf" target="_blank" class="resource-tag">Full Notes</a>
-  </div>
-</div>
+{% assign sorted_categories = categories | sort %}
 
-<div class="term-header">Specialized Topics</div>
+<div class="notes-container">
+    
+    {% for category in sorted_categories %}
+        
+        {% assign display_header = category | replace: "year", "Year " | replace: "_", " " | capitalize %}
+        <div class="term-header">{{ display_header }}</div>
 
-<div class="course-block">
-  <div class="course-title">
-    <span class="course-code">PHY350</span> Electromagnetism
-  </div>
-  <div class="course-desc">
-    Advanced EM theory, Maxwell's equations, and waves.
-  </div>
-  <div class="resource-list">
-    <a href="{{ site.baseurl }}/assets/pdf/E_M.pdf" target="_blank" class="resource-tag">Lecture Notes</a>
-  </div>
-</div>
+        {% for file in library_files %}
+            {% if file.path contains category %}
+                
+                {% assign filename = file.path | split: '/' | last %}
+                {% assign course_name = filename | replace: ".pdf", "" | upcase %}
+                
+                {% if filename contains ".pdf" %}
+                    <div class="course-block">
+                        <div class="course-title">
+                            <span class="course-code">{{ course_name }}</span>
+                            </div>
+                        
+                        <div class="course-desc">
+                            University notes for {{ course_name }}. 
+                            (Automatically synced from Overleaf).
+                        </div>
+                        
+                        <div class="resource-list">
+                            <a href="{{ site.baseurl }}{{ file.path }}" target="_blank" class="resource-tag">
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
 
-<div class="course-block">
-  <div class="course-title">
-    <span class="course-code">PHY400</span> Quantum Topics
-  </div>
-  <div class="course-desc">
-    Coverage of Quantum Optics and Quantum Information theory.
-  </div>
-  <div class="resource-list">
-    <a href="{{ site.baseurl }}/assets/pdf/Quantum_Optics.pdf" target="_blank" class="resource-tag">Quantum Optics</a>
-    <a href="{{ site.baseurl }}/assets/pdf/Quantum_Information.pdf" target="_blank" class="resource-tag">Quantum Information</a>
-  </div>
+    {% endfor %}
+
+    {% if library_files.size == 0 %}
+        <div style="padding: 20px; text-align: center; color: #666;">
+            <p>No notes found yet. Upload a PDF to your <b>university-notes</b> GitHub repo to see it appear here!</p>
+        </div>
+    {% endif %}
+
 </div>
