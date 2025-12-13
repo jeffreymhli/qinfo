@@ -18,10 +18,8 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-Hi! I am Jeffrey, an undergraduate Engineering Science student at the University of Toronto pursuing a specialization in Engineering Physics. I am interested in Quantum Computing, Quantum Information, and Machine learning. All my notes for quantum and machine learning are included in the teaching section.
+Hi! I am Jeffrey, an undergraduate Engineering Science student at the University of Toronto pursuing a specialization in Engineering Physics. I am interested in Quantum Computing, Quantum Information, and Machine learning. All my notes for quantum and machine learning are included in the notes section.
 
-"[Quantum mechanics] describes nature as absurd from the point of view of common sense. And yet it fully agrees with experiment. So I hope you can accept nature as She is - absurd."
-
--Richard P. Feynman
+"
 
 <!-- <a href="assets\pdf\example_pdf.pdf" style="display: inline-block; padding: 10px 20px; font-size: 16px; color: white; background-color: #007BFF; border-radius: 5px; text-decoration: none; text-align: center;" target="_blank">View My PDF</a> -->

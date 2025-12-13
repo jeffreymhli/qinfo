@@ -1,7 +1,7 @@
 ---
 layout: page
-title: teaching
-permalink: /teaching/
+title: Notes
+permalink: /notes/
 description: A growing collection of the course notes throughout my academic journey.
 nav: true
 nav_order: 3
