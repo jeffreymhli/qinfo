@@ -104,12 +104,12 @@ related_publications: true
                         
                         <div class="course-desc">
                             University notes for {{ course_name }}. 
-                            (Automatically synced from Overleaf).
+                            .
                         </div>
                         
                         <div class="resource-list">
                             <a href="{{ site.baseurl }}{{ file.path }}" target="_blank" class="resource-tag">
-                                Download PDF
+                                Course Note
                             </a>
                         </div>
                     </div>
