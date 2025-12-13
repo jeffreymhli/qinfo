@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Notes
+title: notes
 permalink: /notes/
 description: A growing collection of the course notes throughout my academic journey.
 nav: true
