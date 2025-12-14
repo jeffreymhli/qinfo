@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Selecting High Current Motor Controllers"
-date:   2025-12-14 12:00:00 -0500
+date:   2025-12-14 9:00:00 -0500
 categories: [engineering, robotics]
 tags: [hardware, motors, arduino]
 description: "A comparison of high-current motor controllers for our high-power robotics application."
