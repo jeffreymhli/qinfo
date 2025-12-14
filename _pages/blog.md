@@ -1,10 +1,10 @@
 ---
 layout: page
 permalink: /blog/
-title: Blog
+title: blog
 description: Some of my little findings and learning repositories.
 nav: true
-nav_order: 2
+nav_order: 5
 ---
 
 <div class="post-list">
